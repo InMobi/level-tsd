@@ -1,0 +1,2 @@
+leveldb==0.1
+txJSON-RPC==0.3.1
