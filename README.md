@@ -31,19 +31,9 @@ DATABASE = level-tsd
 ```
 
 ### Graphite-web
-__Assumption :__ The graphite version is 0.10.0 or above. Specifically, it needs to support the STORAGE_FINDERS directive
+A new graphite web connector is needed to access this new backend. The carbon daemon and the graphite-web deployment need not be on the same host. Hence the finder is a different project
 
-Add the following to your local_settings.py
-
-```py
-STORAGE_FINDERS = ( 
-    'pyleveltsd.gateway.LevelRpcFinder',
-)
-
-LEVEL_RPC_PATH="http://localhost:2005"
-```
-
-Note that you may need to modify the _STORAGE_FINDERS_ section if you have other storage mechanisms that need to be used. Most users would be interested in also adding _graphite.finders.standard.StandardFinder_ to the list.
+See InMobi/level-tsd-finder for getting the graphite web connector.
 
 ## TODO
 (All of these should be turned into issues)
