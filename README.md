@@ -19,7 +19,7 @@ pip install -git+https://github.com/InMobi/level-tsd.git#egg=pyleveltsd
 ```
 
 ### Carbon
-We require the megacarbon branch of carbon daemon. This is becase no other version permits storage plugins. There is still a small level of change that needs to be done as the plugin autodiscovery mechanism is broken. Hence, you need to use this fork:
+We require the [megacarbon](https://github.com/graphite-project/carbon/tree/megacarbon) branch of carbon daemon. This is becase no other version permits storage plugins. There is still a small level of change that needs to be done as the plugin autodiscovery mechanism is broken. Hence, you need to use this fork:
 ```
 pip install -git+https://github.com/InMobi/carbon.git@leveltsd#egg=carbon
 
